@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <!-- estrutura da calculadora-->
+            
+            <div class="box-container">
+                <div class="header">
+                <input type="text" id="resultado" placeholder="0">
+                </div>
+                <div class="conteudo">
+                    <div class="set">
+                        <button class="btn btn-set" onclick="limparTela()">C</button>
+                        <button class="btn btn-set" onclick="limparTela()">CE</button>
+                    </div>
+                    <div class="grupo">
+                        <div class="numeros">
+                            <button class="btn btn-numero">7</button>
+                            <button class="btn btn-numero">8</button>
+                            <button class="btn btn-numero">9</button>
+                            <button class="btn btn-numero">4</button>
+                            <button class="btn btn-numero">5</button>
+                            <button class="btn btn-numero">6</button>
+                            <button class="btn btn-numero">1</button>
+                            <button class="btn btn-numero">2</button>
+                            <button class="btn btn-numero">3</button>
+                            <button class="btn btn-numero">.</button>
+                            <button class="btn btn-numero">0</button>
+                            <button class="btn btn-calcular" onclick="calcular()">=</button>
+                        </div>
+                        <div class="operadores">
+                            <button class="btn btn-operador">%</button>
+                            <button class="btn btn-operador">*</button>
+                            <button class="btn btn-operador">-</button>
+                            <button class="btn btn-operador">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
